@@ -33,15 +33,15 @@ def main():
     args, extra_arguments = parser.parse_known_args()
 
     output_dir = getattr(args, 'output_dir')
-    files = getattr(args, 'metrics.scores')
+    files = getattr(args, 'metric.scores')
 
     files = [op.abspath(x) for x in files]
     with open(op.join(output_dir, 'inputs.txt'), 'w') as fh:
         fh.write("\n".join(map(str, files)))
 
-    run_method(output_dir = output_dir,
-               metrics_metafile = op.join(output_dir, 'inputs.txt'),
-               report_basename = 'plotting_report.html')
+#    run_method(output_dir = output_dir,
+#               metrics_metafile = op.join(output_dir, 'inputs.txt'),
+#               report_basename = 'plotting_report.html')
 
 if __name__ == "__main__":
     main()
