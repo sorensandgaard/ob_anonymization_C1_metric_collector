@@ -32,7 +32,10 @@ def main():
     # Parse arguments
     args, extra_arguments = parser.parse_known_args()
 
-    print(extra_arguments)
+    content = parser.parse_known_args()
+    with open("/home/projects/dtu_00062/people/sorsan/ob_anonymization_dataloss/test.txt", 'w') as file:
+        file.write(content)
+    
 
     output_dir = getattr(args, 'output_dir')
     files = getattr(args, 'metric.scores')
