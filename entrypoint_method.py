@@ -32,6 +32,8 @@ def main():
     # Parse arguments
     args, extra_arguments = parser.parse_known_args()
 
+    print(extra_arguments)
+
     output_dir = getattr(args, 'output_dir')
     files = getattr(args, 'metric.scores')
 
