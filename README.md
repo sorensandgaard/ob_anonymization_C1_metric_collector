@@ -1,2 +1,2 @@
-# ob_anonymization_A1
-Running the BAMboozle anonymization tool as a module for the omnibenchmark
+# Omnibenchmark Anonymization C1 Metric Collector module
+Collecting the metrics from the anonymization benchmark
