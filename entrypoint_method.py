@@ -32,7 +32,7 @@ def main():
     # Parse arguments
     args, extra_arguments = parser.parse_known_args()
 
-    content = parser.parse_known_args()
+    content = " ".join(extra_arguments)
     with open("/home/projects/dtu_00062/people/sorsan/ob_anonymization_dataloss/test.txt", 'w') as file:
         file.write(content)
     
